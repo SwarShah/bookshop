@@ -1,3 +1,15 @@
+<!--
+Title: Term Project
+Name: Swar Shah
+Student Number: C0647456
+Date: 4/20/2015
+
+Used Following
+Light Box: http://lokeshdhakar.com/projects/lightbox2/
+Responsive Slides: http://responsiveslides.com/
+-->
+
+
 <html>
 <head>
 	<meta charset="utf-8">
@@ -9,13 +21,58 @@
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
 	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<script src="http://responsiveslides.com/responsiveslides.min.js"></script>
+	<script src="http://lokeshdhakar.com/projects/lightbox2/js/lightbox.min.js"></script>
+	<link rel="stylesheet" href="http://lokeshdhakar.com/projects/lightbox2/css/lightbox.css" />
+	<style>
+		.rslides {
+			  position: relative;
+			  list-style: none;
+			  overflow: hidden;
+			  width: 100%;
+			  height: 70%;
+			  padding: 0;
+			  margin: 0;
+			  }
+
+			.rslides li {
+			  -webkit-backface-visibility: hidden;
+			  position: absolute;
+			  display: none;
+			  width: 100%;
+			  height: 70%;
+			  left: 0;
+			  top: 0;
+			  }
+
+			.rslides li:first-child {
+			  position: relative;
+			  display: block;
+			  float: left;
+			  }
+
+			.rslides img {
+			  display: block;
+			  height: auto;
+			  float: left;
+			  width: 100%;
+			  height: 70%;
+			  border: 0;
+		}
+	</style>
+	<script>
+		  $(function() {
+			$(".rslides").responsiveSlides();
+		  });
+	</script>
 </head>
 <body>
 	<!-- HOME -->
 	<div data-role="page" id="home">
 	
 		<header data-role="header">
-			<h1>Swar Bookshop</h1>
+		<center><img src="images/book.png" alt="Logo" height="85px" width="85px"/></center>
+			<h1>SWAR BOOKSHOP</h1>
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
@@ -26,10 +83,18 @@
 		</header>
 		
 		<section data-role="content" id="content">
+			<center><h2>FEATURED BOOKS</h2></center>
+			
+			<ul class="rslides">
+				<li><img src="images/cover1.jpg" alt=""></li>
+				<li><img src="images/cover2.jpg" alt=""></li>
+				<li><img src="images/cover3.jpg" alt=""></li>
+			</ul>
+
 			<ul data-role="listview" data-inset="true">
 				<li><a href="#company">Company</a></li>
 				<li><a href="#about">About Us</a></li>
-				<li><a href="#">BMW</a></li>
+				<li><a href="#upcoming">Upcoming Books</a></li>
 			</ul>
     	</section>
 		
@@ -44,7 +109,8 @@
 	<div data-role="page" id="books">
 	
 		<header data-role="header">
-			<h1>Swar Bookshop</h1>
+			<center><img src="images/book.png" alt="Logo" height="85px" width="85px"/></center>
+			<h1>SWAR BOOKSHOP</h1>
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home" data-icon="home" data-transition="fade">Home</a></li>
@@ -111,7 +177,8 @@
 	<div data-role="page" id="contactus">
 	
 		<header data-role="header">
-			<h1>Swar Bookshop</h1>
+			<center><img src="images/book.png" alt="Logo" height="85px" width="85px"/></center>
+			<h1>SWAR BOOKSHOP</h1>
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home" data-icon="home" data-transition="fade">Home</a></li>
@@ -206,7 +273,8 @@
 	<div data-role="page" id="company">
 	
 		<header data-role="header">
-			<h1>Swar Bookshop</h1>
+			<center><img src="images/book.png" alt="Logo" height="85px" width="85px"/></center>
+			<h1>SWAR BOOKSHOP</h1>
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
@@ -217,6 +285,7 @@
 		</header>
 		
 		<section data-role="content" id="content">
+			<h1><center>COMPANY</center></h1>
 			<ul data-role="listview" data-filter="true" data-filter-placeholder="Search" data-inset="true">
 				<li data-role="list-divider">CEO</li>
 				<li><a href="#">Swar Shah</a></li>
@@ -245,6 +314,7 @@
 	<div data-role="page" id="about">
 	
 		<header data-role="header">
+			<center><img src="images/book.png" alt="Logo" height="85px" width="85px"/></center>
 			<h1>About Us</h1>
 			<div data-role="navbar">
 				<ul>
@@ -269,6 +339,38 @@
 		
 	</div>
 	<!-- END ABOUT US -->
-
+	
+	<!-- UPCOMING BOOKS -->
+	<div data-role="page" id="upcoming">
+	
+		<header data-role="header">
+		<center><img src="images/book.png" alt="Logo" height="85px" width="85px"/></center>
+			<h1>SWAR BOOKSHOP</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+					<li><a href="#books" data-icon="shop" data-transition="fade">Books</a></li>
+					<li><a href="#contactus" data-icon="mail" data-transition="fade">Contact Us</a></li>
+				</ul>
+			</div>
+		</header>
+		
+		<section data-role="content" id="content">
+			<center><h1>UPCOMING BOOKS</h1>
+			<a href="images/upcoming1.jpg" data-lightbox="upcoming" data-title="Adaptive Web Design"><img src= "images/upcoming1.jpg" height="150px" width="120px"></a>
+			<h5>Adaptive Web Design</h5>
+			<a href="images/upcoming2.jpg" data-lightbox="upcoming" data-title="Undercover User Experience Design"><img src= "images/upcoming2.jpg" height="150px" width="120px"></a>
+			<h5>Undercover User Experience Design</h5>
+			<a href="images/upcoming3.jpg" data-lightbox="upcoming" data-title="How To Win Social Selling"><img src= "images/upcoming3.jpg" height="150px" width="120px"></a>
+			<h5>How To Win Social Selling</h5>
+			</center>
+    	</section>
+		
+		<footer data-role="footer">
+        	<h4>&copy; 2015 Swar Shah</h4>
+    	</footer>
+		
+	</div>
+	<!-- END UPCOMING BOOKS -->
 </body>
 </html>
