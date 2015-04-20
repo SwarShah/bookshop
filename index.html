@@ -30,7 +30,7 @@
     	</section>
 		
 		<footer data-role="footer">
-        	<h4>All Rights Reserved 2015</h4>
+        	<h4>&copy; 2015 Swar Shah</h4>
     	</footer>
 		
 	</div>
@@ -40,7 +40,7 @@
 	<div data-role="page" id="books">
 	
 		<header data-role="header">
-			<h1>Books</h1>
+			<h1>Swar Bookshop</h1>
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home" data-icon="home" data-transition="fade">Home</a></li>
@@ -55,17 +55,17 @@
     	</section>
 		
     	<footer data-role="footer">
-        	<h4>All Rights Reserved 2015</h4>
+        	<h4>&copy; 2015 Swar Shah</h4>
     	</footer>
 		
 	</div>
 	<!-- END BOOKS -->
 	
-	<!-- CONTACT -->
+	<!-- CONTACT US -->
 	<div data-role="page" id="contactus">
 	
 		<header data-role="header">
-			<h1>Contact Us</h1>
+			<h1>Swar Bookshop</h1>
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home" data-icon="home" data-transition="fade">Home</a></li>
@@ -76,15 +76,85 @@
 		</header>
 		
 		<section data-role="content" id="content">
-			<p>Hello Contact Us</p>
+			<h1>Contact Us</h1>
+			<form action="" method="post">
+				<div data-role="fieldcontain">
+					<label for="name">Name:</label>
+					<input type="text" name="name" id="name" value="" placeholder="Full Name"/>
+				</div>
+				<div data-role="fieldcontain">
+					<label for="orderNum">Order Number:</label>
+					<input type="text" name="orderNum" id="name" value="" placeholder="Order Number"/>
+				</div>
+				<div data-role="fieldcontain">
+					<label for="email">E-mail:</label>
+					<input type="email" name="email" id="email" placeholder="Email address">
+				</div>
+				<div data-role="fieldcontain">
+					<label for="dop">Purchase Date:</label>
+					<input type="date" name="dop" id="dop" placeholder="Purchase Date">
+				</div>
+				<div data-role="fieldcontain">
+					<label for="select-choice-a" class="select">Subject:</label>
+					<select name="select-choice-a" id="select-choice-a" data-native-menu="false">
+					    <option>Select your subject</option>
+					    <option value="standard">Facing a Technical Error</option>
+					    <option value="rush">Payment Related Query</option>
+					    <option value="express">Other Queries</option>
+					</select>
+				</div>
+				<div data-role="fieldcontain">
+					<fieldset data-role="controlgroup">
+						<legend>Payment Method:</legend>
+						<input type="radio" name="radio-choice-1" id="radio-choice-1" value="credit" checked="checked">
+						<label for="radio-choice-1">Credit</label>
+						<input type="radio" name="radio-choice-1" id="radio-choice-2" value="debit">
+						<label for="radio-choice-2">Debit</label>
+						<input type="radio" name="radio-choice-1" id="radio-choice-3" value="paypal">
+						<label for="radio-choice-3">PayPal</label>
+					</fieldset>
+				</div>
+				<div data-role="fieldcontain">
+					<label for="contactMethod">Contact Method:</label>
+					<input type="checkbox" data-role="flipswitch" name="contactMethod" id="contactMethod" data-on-text="Phone" data-off-text="Email" data-wrapper-class="custom-size-flipswitch">
+				</div>
+				<div data-role="fieldcontain">
+					<fieldset data-role="controlgroup" data-iconpos="right">
+						<legend>Contact Time:</legend>
+						<input type="checkbox" name="morning" id="morning">
+						<label for="morning">Morning</label>
+						<input type="checkbox" name="noon" id="noon">
+						<label for="noon">Noon</label>
+						<input type="checkbox" name="evening" id="evening">
+						<label for="evening">Evening</label>
+			    	</fieldset>
+				</div>
+				<div data-role="fieldcontain">
+					<label for="rate">Rate Your Experience With Us:</label>
+	    			<input type="range" name="rate" id="rate" data-highlight="true" min="1" max="10" value="4">
+				</div>
+				<div data-role="fieldcontain">
+					<label for="message">Message:</label>
+					<textarea cols="40" rows="15" name="message" id="message" placeholder="Your message"></textarea>
+				</div>
+				<a href="#myPopupDialog" data-rel="popup" data-position-to="window" data-transition="flow" class="ui-shadow ui-btn">Submit</a>
+				<div data-role="popup" id="myPopupDialog">
+				  <div data-role="header">
+					<h1>Acknowledgement</h1>
+				  </div>				  
+				  <div data-role="main" class="ui-content">
+					<p>By clicking ok you are agree that company will contact you about your concern.</p>
+					<a href="#home" class="ui-btn ui-corner-all ui-shadow ui-btn ui-btn-b">Ok</a>
+				  </div>
+			</form>
     	</section>
 		
     	<footer data-role="footer">
-        	<h4>All Rights Reserved 2015</h4>
+        	<h4>&copy; 2015 Swar Shah</h4>
     	</footer>
 		
 	</div>
-	<!-- END CONTACT -->
-	
+	<!-- END CONTACT US -->
+
 </body>
 </html>
