@@ -26,7 +26,11 @@
 		</header>
 		
 		<section data-role="content" id="content">
-			<p>Hello Home</p>
+			<ul data-role="listview" data-inset="true">
+				<li><a href="#company">Company</a></li>
+				<li><a href="#about">About Us</a></li>
+				<li><a href="#">BMW</a></li>
+			</ul>
     	</section>
 		
 		<footer data-role="footer">
@@ -51,6 +55,7 @@
 		</header>
 		
 		<section data-role="content" id="content">
+		<h1><center>BOOKS</center></h1>
 		<div class="ui-grid-b">
 		  <div class="ui-block-a" align="center">
 			<a href="#" class="ui-btn ui-corner-all ui-disabled ui-btn-active">Category</a><br>
@@ -117,7 +122,7 @@
 		</header>
 		
 		<section data-role="content" id="content">
-			<center><h1>Contact Us</h1></center>
+			<h1><center>CONTACT US</center></h1>
 			<form action="" method="post">
 				<div data-role="fieldcontain">
 					<label for="name">Name:</label>
@@ -212,15 +217,20 @@
 		</header>
 		
 		<section data-role="content" id="content">
-			<ul data-role="listview" data-filter="true" data-filter-placeholder="Search" data-inset="true" >
-				<li data-role="list-divider">Mail</li>
-			    <li><a href="#">Apple</a></li>
-			    <li><a href="#">Banana</a></li>
-			    <li><a href="#">Cherry</a></li>
-				<li data-role="list-divider">Mail</li>
-			    <li><a href="#">Cranberry</a></li>
-			    <li><a href="#">Grape</a></li>
-			    <li><a href="#">Orange</a></li>
+			<ul data-role="listview" data-filter="true" data-filter-placeholder="Search" data-inset="true">
+				<li data-role="list-divider">CEO</li>
+				<li><a href="#">Swar Shah</a></li>
+				<li data-role="list-divider">Full Time</li>
+				<li><a href="#">Madhuri Shah</a></li>
+				<li><a href="#">Bhavana Shah</a></li>
+				<li><a href="#">Umesh Prajapati</a></li>
+				<li><a href="#">John Doe</a></li>
+				<li><a href="#">Richard Roe</a></li>
+				<li data-role="list-divider">Part Time</li>
+				<li><a href="#">John Roe</a></li>
+				<li><a href="#">Jane Doe</a></li>				
+				<li><a href="#">Manoj Shah</a></li>
+				<li><a href="#">Anshi Vasani</a></li>
 			</ul>
     	</section>
 		
@@ -230,6 +240,35 @@
 		
 	</div>
 	<!-- END COMPANY -->
+	
+	<!-- ABOUT US -->
+	<div data-role="page" id="about">
+	
+		<header data-role="header">
+			<h1>About Us</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+					<li><a href="#books" data-icon="shop" data-transition="fade">Books</a></li>
+					<li><a href="#contactus" data-icon="mail" data-transition="fade">Contact Us</a></li>
+				</ul>
+			</div>
+		</header>
+		
+		<section data-role="content" id="content">
+			<h1><center>ABOUT US</center></h1>
+		<p>We offer wide range of books, magazines, maps, greeting cards and various stationary items in nearly all subjects and different languages. In addition to that we also maintain the stock of bestseller, collectible and first editions of popular books. </p>
+		<p>If you have any query then call or email us. You can also subscribe us by email to get updates about latest offers and discounts.
+		<h3>Our guarantee</h3>
+		<p>Don't worry if you are not satisfied with your purchase we will give full refund including shipping charges. <b>No question asked.</b></p> 
+    	</section>
+		
+		<footer data-role="footer">
+        	<h4>&copy; 2015 Swar Shah</h4>
+    	</footer>
+		
+	</div>
+	<!-- END ABOUT US -->
 
 </body>
 </html>
